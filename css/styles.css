@@ -1,0 +1,42 @@
+.navbar {
+    justify-content: center;
+    text-align: center; /* Centra el texto de la barra de navegación */
+}
+
+.navbar-nav {
+    display: inline-block; /* Hace que los elementos de la lista se muestren en línea */
+    float: none; /* Elimina el flotante de los elementos de la lista */
+}
+
+.navbar-nav {
+    flex-direction: row; /* Establece la dirección de los elementos de la lista como horizontal */
+}
+
+.navbar-header{
+    text-align: center;
+    display: inline-block; /* Hace que los elementos de la lista se muestren en línea */
+    float: none; /* Elimina el flotante de los elementos de la lista */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 10px; /* Espacio entre los elementos de la lista */
+}
+
+
+
+h1{
+    text-align: center;
+}
+
+.container-fluid{
+    display: block;
+}
+
+.navbar-collapse {
+    justify-content: flex-end; /* Alinea los elementos de la barra de navegación al final */
+}
+
+.navbar-brand {
+    padding-right: 15px; /* Añade un espacio entre el borde derecho y el contenido del enlace navbar-brand */
+}
+

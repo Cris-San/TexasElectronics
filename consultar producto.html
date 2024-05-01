@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Consultar Producto</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="barra.html">Texas Electronics</a>
+    </div>
+    <ul class="nav navbar-nav">
+      
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle= "dropdown" href="#">Administrador <span class="caret"></span></a>
+     
+     <ul class="dropdown-menu">
+
+      <li><a href="barra.html">Inicio</a></li>
+
+     </ul>
+      </li>
+
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle= "dropdown" href="#">Inventario <span class="caret"></span></a>
+     
+     <ul class="dropdown-menu">
+
+      <li><a href="registrar producto.html">Registrar Productos</a></li>
+      <li><a href="actualizar producto.html">Actualizar Productos</a></li>
+      <li><a href="consultar producto.html">Consultar Productos</a></li>
+      <li><a href="eliminar producto.html">Eliminar Productos</a></li>
+
+     </ul>
+      </li>
+
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle= "dropdown" href="#">Ventas <span class="caret"></span></a>
+     
+     <ul class="dropdown-menu">
+
+      <li><a href="informacion de ventas.html">Información de Ventas</a></li>
+      
+     </ul>
+      </li>
+
+       <li class="dropdown"><a class="dropdown-toggle" data-toggle= "dropdown" href="#">Utilidades <span class="caret"></span></a>
+     
+     <ul class="dropdown-menu">
+
+      <li><a href="calculadora.html">Calculadora</a></li>
+      <li><a href="calculadora2.html">Calculadora de Resistencias</a></li>
+      
+     </ul>
+      </li>
+     
+
+
+    </ul>
+  </div>
+</nav>
+
+		<h1>Consultar Producto</h1>
+
+		<img src="img/buscar.png" class="mx-auto d-block" style="width: 20%" >
+		<br><br>
+
+		<form name="f1" action="actualizar producto.html" method="POST">
+
+		<div class="form-group">
+			
+			<label for="Código de Producto">Código de Producto</label>
+			<input type="text" class="form-control" id="a" placeholder="Ingrese el código del producto" name="a">
+			<br>
+
+			<input type="Button" name="" value="Consultar Producto" onclick="" class="btn btn-primary">
+            <br> <br>
+
+
+
+
+		</div>
+
+
+		
+	</form>
+
+	</div>
+
+
+
+</body>
+</html>

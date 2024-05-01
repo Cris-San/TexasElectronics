@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Calculadora de resistencias</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <div class="container p-1 my-1 bg-dark container-sm border  justify-content-center ">
+    <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="barra.html">Texas Electronics</a>
+    </div>
+    <ul class="nav navbar-nav">
+      
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle= "dropdown" href="#">Administrador <span class="caret"></span></a>
+     
+     <ul class="dropdown-menu">
+
+      <li><a href="barra.html">Inicio</a></li>
+
+     </ul>
+      </li>
+
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle= "dropdown" href="#">Inventario <span class="caret"></span></a>
+     
+     <ul class="dropdown-menu">
+
+      <li><a href="registrar producto.html">Registrar Productos</a></li>
+      <li><a href="actualizar producto.html">Actualizar Productos</a></li>
+      <li><a href="consultar producto.html">Consultar Productos</a></li>
+      <li><a href="eliminar producto.html">Eliminar Productos</a></li>
+
+     </ul>
+      </li>
+
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle= "dropdown" href="#">Ventas <span class="caret"></span></a>
+     
+     <ul class="dropdown-menu">
+
+      <li><a href="informacion de ventas.html">Información de Ventas</a></li>
+      
+     </ul>
+      </li>
+
+       <li class="dropdown"><a class="dropdown-toggle" data-toggle= "dropdown" href="#">Utilidades <span class="caret"></span></a>
+     
+     <ul class="dropdown-menu">
+
+      <li><a href="calculadora.html">Calculadora</a></li>
+      <li><a href="calculadora2.html">Calculadora de Resistencias</a></li>
+      
+     </ul>
+      </li>
+     
+    </ul>
+    </div>
+    </nav>
+  </div>
+
+<div class="container">
+
+  <h1>Calculadora de resistencias</h1 >
+
+  <img src="img/calculadora de resistencias.jpg" class="mx-auto d-block" style="width: 30%" >
+
+
+
+<script>
+function calcular(){
+    
+    var a = document.f1.b1.value;
+    var b = document.f1.b2.value;
+    var x = document.f1.b3.value;
+    var r = document.f1.c.value;
+    r1= a.toString()+b.toString();
+    r=parseFloat(r1)*parseFloat(x);
+   document.f1.c.value=r;
+    
+}
+
+</script> 
+
+
+
+<form name="f1" action="resistencia.html" method="POST">
+    
+
+ <h3>Banda 1</h3>     
+<select name="b1" class="form-control">
+ <option value="0" style="background-color: black; color: white">Negro</option>
+ <option value="1" style="background-color: brown; color: white">Cafe</option>
+ <option value="2" style="background-color: red; color: white">Rojo</option>
+ <option value="3" style="background-color: orange; color: white">Naranja</option>
+ <option value="4" style="background-color: yellow; color: white">Amarillo</option>
+ <option value="5" style="background-color: green; color: white">Verde</option>
+ <option value="6" style="background-color: blue; color: white">Azul</option>
+ <option value="7" style="background-color: violet; color: white">Violeta</option>
+ <option value="8" style="background-color: gray; color: white">Gris</option>
+ <option value="9" style="background-color: white; color: black">Blanco</option>
+</select>
+
+<br>
+
+ <h3>Banda 2</h3> 
+<select name="b2" class="form-control">
+ <option value="0" style="background-color: black; color: white">Negro</option>
+ <option value="1" style="background-color: brown; color: white">Cafe</option>
+ <option value="2" style="background-color: red; color: white">Rojo</option>
+ <option value="3" style="background-color: orange; color: white">Naranja</option>
+ <option value="4" style="background-color: yellow; color: white">Amarillo</option>
+ <option value="5" style="background-color: green; color: white">Verde</option>
+ <option value="6" style="background-color: blue; color: white">Azul</option>
+ <option value="7" style="background-color: violet; color: white">Violeta</option>
+ <option value="8" style="background-color: gray; color: white">Gris</option>
+ <option value="9" style="background-color: white; color: black">Blanco</option>
+ 
+</select>
+
+<br>
+
+<h3>Banda 3</h3> 
+<select name="b3" class="form-control">
+<option value="1" style="background-color: black; color: white">Negro</option>
+<option value="10" style="background-color: brown; color: white">Cafe</option>
+<option value="100" style="background-color: red; color: white">Rojo</option>
+<option value="1000" style="background-color: orange; color: white">Naranja</option>
+<option value="10000" style="background-color: yellow; color: white">Amarillo</option>
+<option value="100000" style="background-color: green; color: white">Verde</option>
+<option value="1000000" style="background-color: blue; color: white">Azul</option>
+<option value="10000000" style="background-color: violet; color: white">Violeta</option>
+<option value="100000000" style="background-color: gray; color: white">Gris</option>
+<option value="1000000000" style="background-color: white; color: black">Blanco</option>
+</select>
+ 
+	<br>
+  <div class="btn-group">
+  <input type="Button" name="" value="calcular" onclick="calcular()" class="btn btn-success">
+  <br> <br>
+  <input type="Button" name="" value="Nuevo" onclick="reset()" class="btn btn-primary">
+  <br>
+  </div>
+  <br>
+
+  <label for="resultado">Resultado en Ohmios:</label>
+  <input type="text" class="form-control" id="c" name="c" placeholder="Aqui se imprime el valor de la resistencia">
+  <br>
+
+
+	</div>
+
+  	</form>
+
+      
+</div>
+
+</body>
+</html>

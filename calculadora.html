@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+	<html lang="es">
+		<head>
+			<title>Calculadora</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+ 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ 			<link rel="stylesheet" href="css/styles.css">
+ 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+		</head>
+		<body>
+
+			<div class="container p-1 my-1 bg-dark container-sm border  justify-content-center ">
+				<nav class="navbar navbar-expand-lg">
+    				<div class="container-fluid">
+    					<div class="navbar-header">
+      						<a class="navbar-brand" href="#">Texas Electronics</a>
+    					</div>
+    						<ul class="nav navbar-nav">
+      
+      							<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle= "dropdown" href="#">Administrador <span class="caret"></span></a>
+     								<ul class="dropdown-menu">
+
+      								  <li><a href="barra.html">Inicio</a></li>
+     								</ul>
+                   				</li>
+
+      							<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle= "dropdown" href="#">Inventario <span class="caret"></span></a>
+								
+     								<ul class="dropdown-menu">
+									
+      									<li><a href="registrar producto.html">Registrar Productos</a></li>
+      									<li><a href="actualizar producto.html">Actualizar Productos</a></li>
+      									<li><a href="consultar producto.html">Consultar Productos</a></li>
+      									<li><a href="eliminar producto.html">Eliminar Productos</a></li>
+									
+     								</ul>
+      							</li>
+
+      							<li class="dropdown"><a class="dropdown-toggle" data-toggle= "dropdown" href="#">Ventas <span class="caret"></span></a>
+     								<ul class="dropdown-menu">
+      									<li><a href="informacion de ventas.html">Información de Ventas</a></li>
+     								</ul>
+      							</li>
+
+       								<li class="dropdown">
+										<a class="dropdown-toggle" data-toggle= "dropdown" href="#">Utilidades <span class="caret"></span></a>
+     
+     									<ul class="dropdown-menu">
+
+      										<li><a href="calculadora.html">Calculadora</a></li>
+      										<li><a href="calculadora2.html">Calculadora de Resistencias</a></li>
+     									</ul>
+      								</li>
+    						</ul>
+    				    </div>
+    			</nav>
+			</div>
+	
+			<div class="container">
+
+				<h1>Calculadora</h1>
+				<div><img src="img/calculadora.png" class="mx-auto d-block" style="width: 20%"></div>
+
+
+					<script>
+
+						function ganancia() {
+
+							var a = document.f1.a.value;
+							var b = document.f1.b.value;
+							var c = document.f1.c.value;
+							var d = document.f1.d.value;
+							var e = document.f1.e.value;
+							var r = document.f1.d.value;
+				
+							r= parseFloat((a*b)/100)
+							document.f1.e.value = r;
+						}
+
+							function venta() {
+
+								var a = document.f1.a.value;
+								var b = document.f1.b.value;
+								var c = document.f1.c.value;
+								var d = document.f1.d.value;
+								var e = document.f1.e.value;
+								var r = document.f1.d.value;
+
+								r= parseFloat((a*b)/100)+parseFloat((a*c)/100)+parseFloat(a)
+									document.f1.d.value = r;
+							}		
+
+		 			</script>
+
+					<form name="f1" action="calculadora.html" method="POST">
+
+						<div class="form-group">
+
+							<label for="Valor de Compra">Valor de Compra</label>
+							<input type="text" class="form-control" id="a" placeholder="Ingrese el Valor de Compra" name="a">
+							<br>
+
+							<label for="Porcentaje Utilidad">Porcentaje de Utilidad o Ganancia</label>
+							<input type="text" class="form-control" id="b" placeholder="Ingrese el Porcentaje" name="b">
+							<br>
+
+							<label for="Porcentaje de IVA">Porcentaje de IVA</label>
+							<input type="text" class="form-control" id="c" placeholder="Ingrese el Porcentaje IVA" name="c">
+							<br>
+
+							<div class="btn-group">
+
+            					<input type="Button" name="" value="Ganancia" onclick="ganancia()" class="btn btn-success">
+								<br>
+
+								<input type="Button" name="" value="Valor Venta" onclick="venta()" class="btn btn-warning">
+			
+
+								<input type="Button" name="" value="Nuevo" onclick="reset()" class="btn btn-primary">
+								<br><br>
+
+							</div>
+			
+							<br><br>
+
+
+							<label for="resultado venta">Valor de Venta</label>
+							<input type="text" class="form-control" id="d" name="d" placeholder="Aqui va el resultado de la venta" >
+							<br>
+
+							<label for="resultado ganancia">Utilidad o Ganancia</label>
+							<input type="text" class="form-control" id="e" name="e" placeholder="Aqui va el resultado de la ganancia" >
+							<br>
+
+						</div>
+		
+					</form>
+
+			</div>
+
+
+
+		</body>
+	</html>
